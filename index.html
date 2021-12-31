@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Charts</title>
+</head>
+<body>
+
+    <div class="chart-data">
+        <div class="container">
+            <div class="col">
+                <div class="form-group">
+                    <label for="chemistry">Chemistry</label>
+                    <input type="number" name="chemistry" id="chemistry" class="input-control">
+                </div>
+                <div class="form-group">
+                    <label for="math">Math</label>
+                    <input type="number" name="chemistry" id="math" class="input-control">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="science">Science</label>
+                    <input type="number" name="science" id="science" class="input-control">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="arabic">Arabic</label>
+                    <input type="number" name="arabic" id="arabic" class="input-control">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="physics">Physics</label>
+                    <input type="number" name="physics" id="physics" class="input-control">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="column">Column chart</label>
+                    <input class="check-chart" type="checkbox" id="column" name="column" checked>
+                </div>
+                <div class="form-group">
+                    <label for="line">Line chart</label>
+                    <input class="check-chart" type="checkbox" id="line" name="line">
+                </div>
+                <div class="form-group">
+                    <label for="pie">Pie chart</label>
+                    <input class="check-chart" type="checkbox" id="pie" name="pie">
+                </div>
+                <div class="form-group">
+                    <label for="donut">Donut chart</label>
+                    <input class="check-chart" type="checkbox" id="donut" name="donut">
+                    <button id="btnCalc" class="btn-calc">calculate</button>
+                </div>
+            </div>
+            <div class="col">
+                <p class="subject-name">Chemistry</p>
+                <p class="subject-name">Math</p>
+                <p class="subject-name">Science</p>
+                <p class="subject-name">Arabic</p>
+                <p class="subject-name">Physics</p>
+            </div>
+        </div>
+        <div class="container charts-view">
+            <div class="col">
+                <canvas id="bar" width="300" height="150"></canvas>
+            </div>
+            <div class="col">
+                <canvas id="piechart" width="300" height="150"></canvas>
+            </div>
+            <div class="col">
+                <canvas id="donutchart" width="300" height="150"></canvas>
+            </div>
+            <div class="col">
+                <canvas id="linechart" width="300" height="150"></canvas>
+            </div>
+        </div>
+    </div> 
+
+    <script src="js/main.js"></script>
+</body>
+</html>
